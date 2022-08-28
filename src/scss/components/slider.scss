@@ -1,0 +1,49 @@
+.slider {
+  position: relative;
+}
+
+.swiper-wrapper {
+  list-style: none;
+  padding: 0;
+}
+
+.swiper-slide {
+  display: block;
+  width: 100%;
+  position: relative;
+  opacity: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.slider__pagination .swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: static;
+  z-index: 0;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: $btn-apply-color;
+  opacity: 50%;
+  margin: 2.5px;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.swiper-slide-prev {
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+
+.swiper-slide-active {
+  @include mobile-xxl {
+    margin: 0 10px;
+  }
+}

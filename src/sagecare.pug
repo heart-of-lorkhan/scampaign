@@ -1,0 +1,15 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'Sagecare Ltd'
+  - theme = 'marin-theme'
+
+append vars
+  //-
+
+block content
+  main.main
+    include ./pug/components/intro
+    include ./pug/components/article
+    include ./pug/components/cards

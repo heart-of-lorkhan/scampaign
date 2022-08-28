@@ -1,0 +1,19 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'Generic Social Campaigns'
+  - noFooter = true
+
+append vars
+  //-
+
+block content
+  main.main(style="padding: 100px;")
+    a(href="/social-campaign/build/sagecare.html").h2 Sagecare
+    br
+    a(href="/social-campaign/build/iss.html").h2 ISS
+    br
+    a(href="/social-campaign/build/comfort-call.html").h2 Comfort Call
+    br
+

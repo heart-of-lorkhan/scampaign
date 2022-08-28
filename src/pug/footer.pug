@@ -1,0 +1,60 @@
+footer.footer#form
+  .container-md
+    h2.footer__title(data-scrollspy="animate__fadeInUp") Apply now to join the team
+    h3.footer__subtitle(data-scrollspy="animate__fadeInUp") Or <a href="/" class="link footer__link" target="_blank" rel="noopener noreferrer">request a call back</a> and a member of the team will be in touch
+    form(action="#" method="post").form-cv
+      .form-row(data-scrollspy="animate__fadeInUp")
+        .form-col-2
+          .form-input
+            label(for="firstname").label First name&#42;
+            input(type="text" name="firstname").input#firstname
+        .form-col-2
+          .form-input
+            label(for="lastname").label Last name&#42;
+            input(type="text" name="lastname").input#lastname
+        .form-col
+          .form__group
+            .form-input
+              label(for="email").label Email address&#42;
+              input(type="email" name="email").input#email
+        input(type="file" name="upload").input-upload#upload
+        .form-col
+          label(for="upload").label-upload
+            span.label-bold <span>UPLOAD CV</span> (this is optional)
+            span Attach your CV by dropping it here or selecting one.
+        .form-col
+          .form__checkbox(data-scrollspy="animate__fadeInDown")
+            label.checkbox.option(for="checkbox1")
+              input.checkbox__input#checkbox1(type='checkbox')
+              span.checkbox__box
+              span Yes I have access to a car
+        .form-col
+          .form__checkbox(data-scrollspy="animate__fadeInDown")
+            label.checkbox.option(for="checkbox2")
+              input.checkbox__input#checkbox2(type='checkbox')
+              span.checkbox__box
+              span I acknowledge and give permission for my data to be held by city &#38; county and welove9am in accordance witch the general data protection regulation
+        .form-col
+          .form__button-apply(data-scrollspy="animate__fadeInDown")
+            button(type="submit" value="apply now" name="submit").button.button-content Apply now
+  .container-md
+    h2.h2.footer__title(data-scrollspy="animate__fadeInUp") Or request a call back
+    form(action="#" method="post").form-cv#request
+      .form-row(data-scrollspy="animate__fadeInUp")
+        .form-col-2
+          .form-input
+            label(for="name2").label First name&#42;
+            input(type="text" name="firstname").input#name2
+        .form-col-2
+          .form-input
+            label(for="tel").label Contact number&#42;
+            input(type="tel" name="phone").input#tel
+        .form-col.form-button-request
+          .form__button-apply
+            button(type="submit" value="apply now" name="submit").button.button-content Request a callback
+    .footer__logo
+      img(
+      src="img/svg/logo.svg", 
+      alt="SageCare Ltd", 
+      data-scrollspy="animate__fadeInUp").footer__logo
+    .copyright(data-scrollspy="animate__fadeInUp") &copy; 2021 WeLove9am

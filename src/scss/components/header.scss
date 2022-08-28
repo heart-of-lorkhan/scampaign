@@ -1,0 +1,98 @@
+.header__top {
+  padding: 16px 20px;
+  box-shadow: 0px 3px 6px $header-box-shadow;
+
+  @include tablet-large {
+    padding: 20px 0;
+  }
+
+  &.fixed {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+.marin-theme .header__top {
+  background-color: $marin-theme;
+}
+
+.iss-theme .header__top {
+  background-color: $iss-theme;
+}
+
+.comfort-call-theme .header__top {
+  background-color: $comfort-call-theme;
+}
+
+.header__inner {
+  position: relative;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include desktop {
+    display: block;
+    margin-bottom: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.header__logo {
+  max-width: 197px;
+  margin: 0 auto;
+
+  img {
+    height: auto;
+  }
+
+  @include tablet {
+    margin: 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 60%;
+  }
+
+  @include desktop {
+    max-width: 269px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.header__buttons {
+  display: none;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+  }
+}
+
+.hero {
+  @include tablet {
+    display: none;
+  }
+}

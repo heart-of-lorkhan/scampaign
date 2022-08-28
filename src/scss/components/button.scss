@@ -1,0 +1,180 @@
+.button {
+  line-height: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: 1px solid transparent;
+  transition: all $transition-duration;
+  color: $primary-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: #fff;
+    color: $btn-apply-color;
+    transition: all $transition-duration;
+
+    .marin-theme & {
+      background-color: $marin-theme;
+    }
+
+    .iss-theme & {
+      background-color: $iss-theme;
+    }
+
+    .comfort-call-theme & {
+      background-color: $comfort-call-theme;
+    }
+  }
+}
+
+.button-apply {
+  z-index: 2;
+  position: fixed;
+  min-width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: $btn-fixed-color;
+  height: 75px;
+  border-radius: 0;
+  color: $text-color-white;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 16px;
+  color: #fff;
+
+  @include tablet {
+    position: static;
+    color: $primary-color;
+  }
+}
+
+.button-content {
+  display: block;
+  text-align: center;
+  border-radius: 26px;
+  background-color: $btn-apply-color;
+  font-family: $font-family;
+  font-weight: 900;
+  color: $text-color;
+  padding: 12px 28px;
+  min-width: 181px;
+  font-size: 20px;
+  text-transform: none;
+  color: $primary-color;
+}
+
+.button-content-header {
+  @include tablet {
+    font-size: 16px;
+
+    &:not(:last-child) {
+      margin-right: 19px;
+    }
+  }
+
+  @include desktop {
+    position: static;
+    margin-bottom: 0;
+    font-size: 20px;
+    margin-right: 24px;
+  }
+}
+
+.button-section-scroll {
+  transform: translateY(0);
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+
+  &:hover {
+    transform: translateY(20px);
+    transition-property: transform, opacity;
+    transition-duration: 1s;
+    opacity: 0.5;
+  }
+
+  svg {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+
+    @include tablet {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+#apply.animate__fadeInDown,
+#apply.animate__fadeOutDown {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.button-apply-intro {
+  &:last-child {
+    display: none;
+    z-index: -1;
+
+    @include tablet {
+      display: inline-block;
+      z-index: 0;
+    }
+  }
+
+  @include tablet {
+    display: inline-block;
+    text-align: center;
+    border-radius: 26px;
+    background-color: $btn-apply-color;
+    font-family: $font-family;
+    font-weight: 900;
+    padding: 13px 28px;
+    min-width: 181px;
+    font-size: 20px;
+    text-transform: none;
+    height: auto;
+
+    &:not(:last-child) {
+      margin-right: 27px;
+    }
+  }
+}
+
+.button-primary {
+  display: inline-block;
+  text-align: center;
+  border-radius: 26px;
+  color: $text-color-white;
+  font-weight: 900;
+  height: auto;
+  padding: 13px 28px;
+  min-width: 181px;
+  font-size: 20px;
+  text-transform: none;
+  background-color: $btn-fixed-color;
+  margin-right: 15px;
+
+  @include desktop {
+    margin-right: 27px;
+  }
+}
+
+.button-secondary {
+  display: inline-block;
+  text-align: center;
+  border-radius: 26px;
+  color: $primary-color;
+  font-weight: 900;
+  height: auto;
+  padding: 13px 28px;
+  min-width: 181px;
+  font-size: 20px;
+  text-transform: none;
+  background-color: none;
+  border: 1px solid $primary-color;
+}

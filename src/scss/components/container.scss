@@ -1,0 +1,27 @@
+.container-md {
+  min-width: 320px;
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @include tablet-large {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1680px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @include desktop {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+}

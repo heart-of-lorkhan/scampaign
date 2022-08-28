@@ -1,0 +1,48 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 25px;
+  background-color: $footer;
+
+  @include tablet {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+
+.footer__title {
+  font-weight: 400;
+  color: $text-color-white;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 26px;
+
+  @include tablet {
+    font-size: 50px;
+    margin-bottom: 32px;
+  }
+}
+
+.footer__subtitle {
+  font-weight: 400;
+  color: $text-color-white;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 28px;
+
+  @include tablet {
+    font-size: 30px;
+    margin-bottom: 82px;
+  }
+}
+
+.footer__link {
+  font-weight: 400;
+  color: $text-color-white;
+}
+
+.copyright {
+  color: $text-color-white;
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+}

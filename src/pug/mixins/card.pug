@@ -1,0 +1,13 @@
+mixin card(icon, title, text)
+    .card__container
+        .card__icon
+            if icon === 'WeCare'
+                include ../icons/WeCare
+            else if icon === 'WeListen'
+                include ../icons/WeListen
+            else if icon === 'WeStrive'
+                include ../icons/WeStrive
+            else if icon === 'WeBuild'
+                include ../icons/WeBuild
+        .card__title #{title}
+        .card__text #{text}
